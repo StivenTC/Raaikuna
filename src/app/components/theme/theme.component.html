@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="back-arrow" (click)="goThemes()">X</div>
+  <div class="lesson center">
+    <div class="lesson-header" *ngFor="let quest of theme.lessons[0].items[item_id].quests; let index = index" [ngClass]="{'show': index === actualQuest}">
+        <h1>{{quest.type}}</h1>
+        <img style="width: 5em;" *ngIf="quest.type == 'advice'" src="../../../assets/imgs/icons/advice.svg" alt="">
+        <h1 *ngIf="quest.title">{{quest.title[0]}}</h1>        
+        <img src="../../../../../assets/lessons/lesson{{theme_id}}/imgs/{{quest.img}}" alt="">
+        <audio controls *ngIf="quest.audio">
+          <source src='../../../assets/lessons/lesson{{theme_id}}/audios/{{quest.audio}}' type="audio/mp3">
+        </audio>
+        <h2 *ngIf="quest.text">{{quest.text[0]}}</h2>
+        <h3 *ngIf="quest.text">{{quest.text[1]}}</h3>
+        <h1 *ngIf="quest.subtitle">{{quest.subtitle}}</h1>
+        <div class="advice">
+          <h2 *ngIf="quest.content">{{quest.content[0]}}</h2>
+          <div *ngFor="let ex of quest.example" class="advice-example">{{ex.text}}</div>
+        </div>
+        <div *ngIf="quest.question">
+          <h3 *ngFor="let question of quest.question">{{question}}</h3>
+        </div>
+        <h2>{{quest.subtitle}}</h2>
+        <div *ngIf="quest.type == 'boolean'" class="bool_questions">
+          <button class="true">Verdadero</button>
+          <button class="false">Falso</button>
+        </div>
+        <div *ngIf="quest.conversation" class="dialogue">
+          <div *ngFor="let c of quest.conversation" class="chat">
+            <img style="width: 3em;" src="../../../assets/imgs/icons/{{c.img}}" alt="">              
+              <h3>{{c.name}}</h3>
+              <h2>{{c.msg}}</h2>
+          </div>
+        </div>
+        <div *ngIf="quest.options" class="bool_questions">
+          <button outline *ngFor="let option of quest.options">{{option}}</button>
+        </div>
+    </div>
+    <div class="btn-continue">
+      <button (click)="nextQuest()">Continuar</button>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,28 @@
 {
-  "PAGES": {
-      "HOME": {
-          "TITLE": "App works !"
-      }
-  }
+  "strings": {
+      "app_name": "Ramaikuna",
+      "stats":"Stats",
+      "vocabulary":"Vocabulary",
+      "config":"Configuration",
+      "start":"Let's start",
+      "welcome": "Welcome student",
+      "select_user": "Choose your user and continue your learning",
+      "find_user": "Find yourself here",
+      "new_user": "Are you new?", 
+      "signup_here": "Sign up here",
+      "or": "or",
+      "student":"Student",
+      "continue":"Continue",
+      "write_name": "Write your name here...",
+      "select_cycle":"Select your cycle:",
+      "add_user": "Add my user and let's go"
+    },
+    "errors": {
+      "unknown_error": "Sorry, try again.",
+      "incomplete_name": "Please type your full name",
+      "short_name": "The name is too short",
+      "long_name": "The name is too long",
+      "invalid_name": "The name has invalid characters",
+      "invalid_cycle": "Please select a cycle"
+    }
 }

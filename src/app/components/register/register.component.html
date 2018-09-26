@@ -1,0 +1,40 @@
+<div class="container">
+  <img src="https://image.flaticon.com/icons/svg/137/137531.svg" class="back-arrow" alt="" [routerLink]="['/']">
+  <div>
+    <h1>{{ 'strings.welcome' | translate }}</h1>
+    <div>
+      <p>{{ 'strings.new_user' | translate }}</p>
+      <button class="btn-signup" (click)="showModal()">{{ 'strings.signup_here' | translate }}</button>
+    </div>
+    <p>{{ 'strings.or' | translate }}</p>
+    <h3>{{ 'strings.select_user' | translate }}</h3>
+  </div>
+  <div>
+      <input [(ngModel)]="searchText" class="input-search btn-signup" placeholder="{{ 'strings.find_user' | translate }}" autofocus>
+      <ul>
+        <li class="center"> {{ 'strings.student' | translate }} <span class="user-cycle">&nbsp;</span> </li>
+        <li class="selection" *ngFor="let user of users | filter : searchText" (click)="goThemes(user)">
+          {{ user.name }} 
+          <span class="user-cycle" >{{ user.activeTheme }}</span> 
+        </li>
+      </ul>    
+  </div>
+</div>
+
+<!-- Modal-->
+<div *ngIf="seeModal" class="modal-back" (click)="showModal()"></div>
+<div *ngIf="seeModal" class="modal_signup">
+  <h1 class="center">{{ 'strings.welcome' | translate }}</h1>
+  <input [(ngModel)]="userName" class="modal-input" placeholder="{{ 'strings.write_name' | translate }}" autofocus>
+  <div *ngIf="seeError" class="error-add-user">{{errorMsg}}</div>
+  <div class="modal-select">
+    {{ 'strings.select_cycle' | translate }}
+    <select [(ngModel)]="selectedValue">
+        <option value="0" disabled selected>¿?</option>
+        <option *ngFor="let n of [1,2,3,4]" [ngValue]="n">{{n}}</option>
+    </select>
+  </div> 
+  <div class="center">
+    <button class="modal-btn button" (click)="submitUser()">{{ 'strings.add_user' | translate }}</button>
+  </div>
+</div>

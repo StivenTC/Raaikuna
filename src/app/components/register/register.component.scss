@@ -1,0 +1,134 @@
+.center{
+	text-align: center!important;
+}
+button{
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	background: #673AB7;
+	color: white;
+	text-align: center;
+	ul {
+		padding: 0.5em;
+		list-style-type: none;
+		background: #512DA8;
+		width: 50%;
+		border-radius: 1em;
+		margin: 1em auto;
+		transition: all 1s;
+			li{
+				word-wrap: break-word;
+				padding: .5em;
+				text-align: start;
+				border-radius: 1em;
+				transition: all .5s ease;
+			}
+			.selection{
+				cursor: pointer;
+				&:hover{
+					background: rgba(0, 0, 0, 0.2);
+				}
+			}
+	}
+	.user-cycle{
+		float: right;
+		margin-right: 1em;
+	}
+	.input-search {
+		width: 40%;
+		box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 1em!important;
+		&::placeholder {
+			color: white;
+			font-size: 1em;
+			text-align: center;
+		}
+	}   
+	.btn-signup{
+		background: #009688;
+		color: white;
+		padding: 1em 2em;
+		border: none;
+		border-radius: 5em;
+	}
+	/* background: url(../../../assets/background.jpg) no-repeat center fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	/* background-size: cover; /* version standardisée */    
+}
+.back-arrow{
+    position: absolute;
+    width: 2em;
+    left: 1em;
+    top: 1em;
+}
+.modal-back{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.modal_signup{
+    position: absolute;
+    background: #512DA8;
+    height: 40%;
+    width: 60%;
+    top: 30%;
+    left: 20%;
+    border-radius: 2em;
+    padding: 2em;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    .modal-input{
+        display: block;
+        background: #009688;
+        color: white;
+        margin: 0 auto;
+        padding: 1em 2em;
+        border: none;
+        border-radius: 1em;
+        width: 80%;
+        box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+        &::placeholder {
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        }        
+    }
+    .modal-select{
+        margin-top: 1em;
+        text-align: center;
+        text-align-last:center;
+        select {
+            cursor: pointer;
+              color: #fff;
+              width: 5em;
+              height: 3em;          
+              background: #673AB7;  
+              border-radius: 2em; 
+              border: 2px solid #009688;            
+              margin: 0 0.5em;
+              option{
+                text-align: center;
+                font-size: 1.2em;
+                color: #fff;
+             }
+          } 
+		}
+    .modal-btn{
+			background: #009688;
+			width: 50%;
+			color: white;
+			margin: 2em auto;
+			padding: 1em 2em;
+			border: none;
+			border-radius: 5em;
+    }
+}
+.error-add-user{
+	color: #FF4081;
+	text-align: center;
+}

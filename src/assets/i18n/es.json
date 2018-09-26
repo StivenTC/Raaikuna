@@ -1,0 +1,12 @@
+{
+    "strings": {
+          "app_name": "Ramaikuna",
+          "stats":"Estadísticas",
+          "vocabulary":"Vocabulario",
+          "config":"Configuración",
+          "start":"Empecemos",
+          "welcome": "Bienvenido",
+          "select_user": "Selecciona tu usuario y continua tu aprendizaje"
+    }
+  }
+  

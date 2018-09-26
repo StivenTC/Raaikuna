@@ -1,0 +1,126 @@
+.header{
+	color: #fff;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 1em;
+	img{
+		width: 2em;	
+		vertical-align: middle;	
+	}
+	.header-option{
+		padding: 1em;
+		font-size: 1.1em;		
+	}
+	.left{
+		cursor: pointer;
+		float: left;
+	}
+	cursor: pointer;
+	.right{
+		text-align: end;
+	}
+}
+.container{
+  color: #fff;
+  .theme-header{
+    text-align: center;
+    width: 80%;
+    margin: 2em auto;
+    padding-right: 1em; 
+    img{
+      width: 5em;
+    }
+  }
+  .lesson{
+    text-align: start;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 2em;
+    background: #512DA8;
+    border-radius: 1em;
+    .lesson-header{
+      text-align: center;
+      display: none;
+      padding: 0 5%;
+      img{
+        width: 90%;
+      }	
+    }
+    .explanation{
+        display: inline-block;   
+        padding-left: 2em;   
+        width: 60%;
+      } 
+  }
+  .bool_questions{
+    clear: both;
+    padding: 1.5em;
+    button{
+      vertical-align: middle;
+      background: #673AB7;
+      color: #fff;
+      width: 7em;
+      border: none;
+      padding: .5em 1em;
+      margin-right: 1em;
+    }
+  }
+}
+.center{
+  text-align: center;
+}
+.btn-continue {
+  position: relative;
+  bottom: 0;
+  background: #512DA8;
+  text-align: end;
+  button{
+    background: #009688;
+    border-radius: 5em;
+    border: none;
+    color: #fff;
+    padding: 1em;
+    width: 10em;
+  }
+}
+.chat{
+  background: #673AB7;
+  width: 60%;
+  text-align: start;
+  padding: .5em 2em;
+  margin: .5em;
+  border-radius: 0 5em 5em 2em;
+  clear: both;
+  img{
+    width: 3em;
+    vertical-align: middle;
+  }
+  h3{
+    display: inline;
+    margin-left: 1em; 
+  }
+  &:nth-child(2n){
+    text-align: end;
+    float: right;
+    border-radius: 5em 0 2em 5em;
+  }
+}
+.advice-example{
+  width: 80%;
+  background: #673AB7;
+  text-align: start;
+  margin: auto;
+  padding: 1em;
+}
+.show{
+  display: inherit!important;
+}
+.back-arrow{
+  position: absolute;
+  width: 2em;
+  right: 1em;
+  top: 1em;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+}

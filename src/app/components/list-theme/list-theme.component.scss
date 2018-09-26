@@ -1,0 +1,93 @@
+.header{
+	color: #fff;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 1em;
+	img{
+		width: 2em;	
+		vertical-align: middle;	
+	}
+	.header-option{
+		padding: 1em;
+		font-size: 1.1em;		
+	}
+	.left{
+		cursor: pointer;
+		float: left;
+	}
+	cursor: pointer;
+	.right{
+		text-align: end;
+	}
+}
+.container{
+	.current-theme{
+		color: #fff;
+		text-align: center;
+		img{
+			width: 5em;
+		}
+		h1{
+			margin: 0;
+		}
+		.btn-start{
+			background: #009688;
+			box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+			color: white;
+			padding: 1em 2em;
+			border: none;
+			border-radius: 5em;
+		}
+	}
+	.list-themes{
+		color: #fff;
+		margin-top: 2em;
+		.theme{
+			background: #512DA8;
+			margin: .5em auto;
+			width: 80%;
+			border-radius: 2em;
+			.theme-header{
+				display: grid;
+				grid-gap: 1em;
+				grid-template-columns: 1fr 4fr;
+				padding: 1em; 
+				img{
+					width: 5em;
+					margin: auto;
+				}
+				.theme-header-content{
+					h2{
+						margin: 0;
+					}
+				}
+				
+			}
+			.lessons{
+				border-top: 2px solid #673AB7;
+				text-align: center;
+				width: 80%;
+				margin: auto;
+				.lesson{
+					h2{
+						text-align: start;
+						margin: .5em 0 0 1em;
+					}
+					img{
+						width: 2em;
+					}				
+					h3{
+						width: 10em;
+						font-size: .8em;
+					}
+					.item{
+						padding-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+.inline{
+	display: inline-block;
+}
+//background-color: #009688;
